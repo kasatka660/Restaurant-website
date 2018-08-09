@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Open+Sans|Yeseva+One');
+
+body {
+	background: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 16px;
+	color: #4c4c4c;
+
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+.container {
+	max-width: 1170px;
+}
+
+.container-header {
+	max-width: 1400px;
+}
+
+.container-2, .container-4 {
+	padding-bottom: 140px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.navbar ul {
+	padding-top: 30px;
+}
+
+.btn:hover, .btn:focus {
+	background-color: gray;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: black;
+	text-decoration: none;
+}
+
+
+ul.navbar-nav li a {
+    font-family: "Gentium Book Basic";
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff !important;
+}
+
+ul.navbar-nav li {
+	margin-right: 20px;
+}
+
+i.fab {
+	color: #dab33e;
+}
+
+.page-1 {
+	background: url(../img/background.png);
+	background-position: center top;
+}
+
+.page-3 {
+	background: url(../img/bg2.png);
+	background-position: center top;
+}
+
+.page-5 {
+	background: url(../img/bg3.png);
+	background-position: center top;
+}
+
+.page-7 {
+	background: #191919;
+}
+
+
+h1 {
+	 color: #ffffff;
+	 font-size: 90px;
+	 font-family: Yeseva One;
+	 margin-top: 167px;
+	 margin-bottom: 34px;
+	 padding-bottom: 50px;
+	 background: url(../img/h1-devider.png) no-repeat;
+	 background-position: center bottom;
+}
+
+h2 {
+	font-size: 36px;
+	font-family: Yeseva One;
+	padding-bottom: 40px;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 20px;
+	font-family: Lato;
+	font-weight: 600;
+	color:#cc9900 ;
+	padding-bottom: 15px;
+	border-bottom: dotted #cc9900 1px;
+}
+
+h4 {
+	font-size: 21px;
+	font-family: Yeseva One;
+	padding-bottom: 15px;
+	background: url(../img/divider_light.png) no-repeat;
+	background-position: center bottom;
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+}
+
+
+
+h2.yellow {
+	color:#cc9900;
+	background: url(../img/divider.png) no-repeat;
+	background-position: center bottom;
+}
+
+h2.white {
+	background: url(../img/divider_light.png) no-repeat;
+	background-position: center bottom;
+}
+
+.white {
+	color:#ffffff;
+}
+
+.navbar-brand {
+	background: url(../img/logo---image.png) no-repeat;
+	width: 154px;
+	height: 92px;
+	text-align: center;
+	padding-top: 40px;
+	font-family: Yeseva One;
+}
+
+/*
+.book-table {
+	background: url(../img/bg-button-1.png) no-repeat;
+	margin-right: 30px;
+}
+*/
+
+.see-menu {
+	background: url(../img/bg-button-2.png) no-repeat;
+	margin-left: 20px;
+}
+
+.btn {
+	border: none;
+	border-radius: 0;
+	width: 228px;
+	height: 57px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+.submit-btn {
+    width: 200px;
+	height: 36px;
+	font-size: 16px;
+	background-color: #c89f2d;
+	text-transform: none;
+	padding-top: 5px;
+	margin-top: 40px;
+}
+
+.row-page2, .row-page4, .row-page5, .row-page7 {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.row-page3, .row-page6 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+p {
+	margin-bottom: 60px;
+}
+
+.first-p {
+	margin-bottom: 10px;
+}
+
+.row-page5 p {
+	padding: 10px 74px 0px 30px;
+	margin-left: 44px;
+	margin-top: 20px;
+	font-family: Gentium Book Basic;
+	font-size: 25px;
+	margin-bottom: 0px;
+	background: url(../img/comma.png) no-repeat;
+	background-position: left top;
+}
+
+.row-page6 .col-5 {
+	padding-right: 40px;
+}
+
+.black-square {
+	background: rgba(0, 0, 0, 0.6)
+}
+
+.signature {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.price {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+}
+
+.menu-item {
+	padding-bottom: 40px;
+}
+
+.circle-pics {
+	padding-bottom: 65px;
+}
+
+.form-item {
+	margin-bottom: 20px;
+}
+
+label {
+	color:#cc9900;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.form-control {
+	font-style: italic;
+	color: #7c7c7c;
+}
+
+.row-page7  p.second-p {
+padding-bottom: 70px;	
+background: url(../img/cards.png) no-repeat;
+background-position: center bottom;
+}
+
+.row-page7 p.third-p {
+padding-bottom: 70px;
+background: url(../img/icons.png) no-repeat;
+background-position: center bottom;
+}
