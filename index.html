@@ -12,16 +12,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="daterangepicker/daterangepicker.css">
-<script src="daterangepicker/moment.js"></script>
-<script src="daterangepicker/daterangepicker.js"></script>
+
+<script src="main.js"></script>
 
 <link rel="stylesheet" href="css/main.css">
 </head>
 
 
 <body>
-<div class="container-fluid page-1">
+
+<div id="home" class="container-fluid page-1">
     <div class="navbar navbar-dark navbar-expand-lg sticky-top-navbar">
     	<div class="container container-header">
     		<div class="navbar-header">
@@ -30,15 +30,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     		</div>
-
     		<div class="collapse navbar-collapse " id="navbar-main">
     			<ul class="navbar-nav ml-auto">
-    				<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-    				<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-    				<li class="nav-item"><a class="nav-link" href="#">Ingredients</a></li>
-    				<li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-    				<li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-    				<li class="nav-item"><a class="nav-link" href="#">Reservations</a></li>
+    				<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+    				<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    				<li class="nav-item"><a class="nav-link" href="#ingredients">Ingredients</a></li>
+    				<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+    				<li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+    				<li class="nav-item"><a class="nav-link" href="#reservations">Reservations</a></li>
     				<li class="nav-item"><a class="nav-link" href="#"> <i class="fab fa-twitter"> </i> </a></li>
     				<li class="nav-item"><a class="nav-link" href="#"> <i class="fab fa-youtube"> </i> </a></li>
     				<li class="nav-item"><a class="nav-link" href="#"> <i class="fab fa-facebook-f"> </i> </a></li>
@@ -52,15 +51,67 @@
           <h1> the right ingredients
          <br/>for the right food
            </h1>
-             <a class="btn btn-primary black-square book-table" href="#" role="button">BOOK A TABLE</a>
-             <a class="btn btn-primary see-menu" href="#" role="button">SEE THE MENU</a>
+             <a class="btn btn-primary black-square book-table" href="#table-booking" role="button" data-toggle="modal" data-target="#tableBooking">BOOK A TABLE</a>
+             <a class="btn btn-primary see-menu" href="#menu" role="button">SEE THE MENU</a>
          </div>  
         </div>
        </div>
     </div>
 
+<!-- Modal for table-booking-->
+<div class="modal fade" id="tableBooking" tabindex="-1" role="dialog" aria-labelledby="tableBookingLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Book Your Table Now!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <div class="row">
+           <div class="col-6">
+            <div id="reservations"  class="form-group">
+                <div class="form-item">
+                    <label for="name-field">Name</label>
+                    <input type="text" class="form-control " id="name-field" placeholder="your name*">
+                </div>
+                <div class="form-item">
+                    <label for="name-field">Name</label>
+                    <input type="text" class="form-control" id="name-field" placeholder="your name*">
+                </div>
+            </div>
+       </div>
+       <div class="col-6">
+            <div class="form-group">
+              <div class="form-item">
+                <label for="email-field">Email address</label>
+                <input type="email" class="form-control" id="email-field" placeholder="name@example.com">
+              </div>
+              <div class="form-item">   
+                <label for="party-number">Party number</label>
+                <select class="form-control" id="party-number">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select>
+              </div>  
+            </div>
+        </div>
+         
+      </div> 
+      </div>
+      <div class="modal-footer">
+        <div class=" col-12 py-3 text-center"> <button class="btn submit-btn btn-primary" type="submit" data-dismiss="modal">Book now!</button> </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="container-fluid page-2">
+
+<div id="about" class="container-fluid page-2">
     <div class="container container-3">
      <div class="row row-page2">
       <div class="col text-center">
@@ -75,7 +126,7 @@
    </div>
 </div>
 
-<div class="container-fluid page-3">
+<div id="ingredients" class="container-fluid page-3">
     <div class="container">
      <div class="row row-page3">
        <div class="col-6"> </div>
@@ -92,7 +143,7 @@
    </div>
 </div>
 
-<div class="container-fluid page-4">
+<div id="menu" class="container-fluid page-4">
     <div class="container container-4">
      <div class="row row-page4">
        <div class="col-5"> 
@@ -159,21 +210,66 @@
    </div>
 </div>
 
-<div class="container-fluid page-5">
+ 
+<!---->
+
+
+<div id="reviews" class="container-fluid page-5">
     <div class="container">
      <div class="row row-page5">
        <div class="col-2"> </div>
-       <div class="col-8  black-square">
-        <h2 class="white text-center"> Guest Reviews </h2>
-        <p class="white text-center">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! </p>
+       
+        <div class="col-8">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="black-square">
+          <h2 class="white text-center"> Guest Reviews </h2>
+          <p class="white text-center">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! </p>
+          <div class="signature white text-center">- food inc, New York </div>         
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="black-square">
+          <h2 class="white text-center"> Guest Reviews </h2>
+          <p class="white text-center">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! </p>
+          <div class="signature white text-center">- food inc, New York </div>       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="black-square">
+          <h2 class="white text-center"> Guest Reviews </h2>
+          <p class="white text-center">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! </p>
           <div class="signature white text-center">- food inc, New York </div>
-         </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    
+               
+        </div>
+
         <div class="col-2"> </div>
       </div> 
     </div>
 </div>
 
-<div class="container-fluid page-6">
+<divclass="container-fluid page-6">
     <div class="container">
      <div class="row row-page6">
        <div class="col-3"><img src="img/dish_2.png"></div>
@@ -187,7 +283,7 @@
 
        <div class="row">
            <div class="col-6">
-            <div class="form-group">
+            <div id="reservations"  class="form-group">
                 <div class="form-item">
                     <label for="name-field">Name</label>
                     <input type="text" class="form-control " id="name-field" placeholder="your name*">
@@ -216,7 +312,7 @@
               </div>  
             </div>
         </div>
-         <div class=" col-12 text-center"> <button class="btn submit-btn btn-primary" type="submit">Book now!</button> </div>
+         <div class=" col-12 text-center"> <button class="btn mt-4 submit-btn btn-primary" type="submit">Book now!</button> </div>
       </div> 
     </div>
 </div>
@@ -245,6 +341,10 @@
       </div>
     </div>
 </div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
 </body>
 
 

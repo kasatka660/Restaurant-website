@@ -32,14 +32,17 @@ body {
 	padding-top: 30px;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover, .btn:focus, .btn:active, .btn:not(:disabled):not(.disabled):active {
 	background-color: gray;
 	text-decoration: none;
+	box-shadow: none;
+
 }
 
 a:hover, a:focus {
 	color: black;
 	text-decoration: none;
+
 }
 
 
@@ -142,16 +145,15 @@ h2.white {
 	font-family: Yeseva One;
 }
 
-/*
-.book-table {
-	background: url(../img/bg-button-1.png) no-repeat;
-	margin-right: 30px;
+.see-menu:not(:disabled):not(.disabled):active, .book-table:not(:disabled):not(.disabled):active {
+	background-color: gray;
+    border-color: gray;
+    box-shadow: none;
 }
-*/
 
 .see-menu {
 	background: url(../img/bg-button-2.png) no-repeat;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 .btn {
@@ -172,7 +174,6 @@ h2.white {
 	background-color: #c89f2d;
 	text-transform: none;
 	padding-top: 5px;
-	margin-top: 40px;
 }
 
 .row-page2, .row-page4, .row-page5, .row-page7 {
@@ -210,6 +211,10 @@ p {
 
 .black-square {
 	background: rgba(0, 0, 0, 0.6)
+}
+
+.carousel-item .black-square {
+	height: 500px;
 }
 
 .signature {
@@ -256,4 +261,22 @@ background-position: center bottom;
 padding-bottom: 70px;
 background: url(../img/icons.png) no-repeat;
 background-position: center bottom;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    top: 20px; 
+    left: 30px; 
+    border: none; 
+    background-color: #cc9900; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: #555; 
 }
