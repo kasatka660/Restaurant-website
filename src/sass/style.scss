@@ -1,0 +1,351 @@
+
+@import 'variables/variables.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'layouts/layouts.scss';
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Open+Sans|Yeseva+One');
+
+
+// General styles
+
+body {
+	background: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 16px;
+	color: #4c4c4c;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+h1 {
+ color: #ffffff;
+ font-size: 90px;
+ font-family: Yeseva One;
+ margin-top: 167px;
+ margin-bottom: 34px;
+ padding-bottom: 50px;
+ background: url(../../img/h1-devider.png) no-repeat;
+ background-position: center bottom;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Yeseva One;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+    &.white {
+      background: url(../../img/divider_light.png) no-repeat;
+      background-position: center bottom;
+    }
+    &.yellow {
+      color:#cc9900;
+      background: url(../../img/divider.png) no-repeat;
+      background-position: center bottom;
+    }
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Lato;
+  font-weight: 600;
+  color:#cc9900 ;
+  padding-bottom: 15px;
+  border-bottom: dotted #cc9900 1px;
+}
+
+h4 {
+  font-size: 21px;
+  font-family: Yeseva One;
+  padding-bottom: 15px;
+  background: url(../../img/divider_light.png) no-repeat;
+  background-position: center bottom;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 60px;
+    .first-p {
+      margin-bottom: 10px;
+  }
+}
+
+.container {
+	max-width: 1170px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.white {
+  color:#ffffff;
+}
+
+.form-item {
+  margin-bottom: 20px;
+    label {
+      color:#cc9900;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .form-control {
+      font-style: italic;
+      color: #7c7c7c;
+    }
+}
+
+img {
+  max-width: 100%;
+}
+
+// Special styles for paddings and margins
+
+.paddingbottom-140 {
+  padding-bottom: 140px;
+}
+
+// Pages styles
+
+
+
+#home {
+	background: url(../../img/background.png);
+	background-position: center top;
+    .navbar {
+      .navbar-container {
+        max-width: 1400px;
+              ul {
+                padding-top: 30px;
+                  &.navbar-nav {
+                      li {
+                        margin-right: 20px;
+                          a {
+                            font-family: "Gentium Book Basic";
+                            font-size: 21px;
+                            font-weight: 700;
+                            color: #ffffff;
+                              &:hover, &:focus { 
+                                text-decoration: underline;
+                              }
+                              i.fab {
+                                color: #dab33e; 
+                                  &:hover, &:focus {
+                                      color: white;
+                                    }                  
+                              }
+                          }
+                      }
+                  }
+              }
+          .navbar-brand {
+            background: url(../../img/logo---image.png) no-repeat;
+            width: 154px;
+            height: 92px;
+            text-align: center;
+            padding-top: 40px;
+            font-family: Yeseva One;
+          }
+      }
+    }
+}
+
+#ingredients {
+  background: url(../../img/bg2.png);
+  background-position: center top;
+        .circle-pics {
+          padding-bottom: 65px;
+        }
+}
+
+#menu {
+    .menu-item {
+      padding-bottom: 40px;
+        .price {
+          display: inline-block;
+          position: absolute;
+          right: 20px;
+        }
+    }
+}
+
+#reviews {
+  background: url(../../img/bg3.png);
+  background-position: center top;  
+    .carousel {
+        .carousel-item {
+            .black-square {
+              background: rgba(0, 0, 0, 0.6);
+              height: 500px;
+              padding:10px;
+                p {
+                  padding: 20px 20px 0px 20px;
+                  font-family: Gentium Book Basic;
+                  font-size: 25px;
+                  margin-bottom: 0px;
+                  background: url(../../img/comma.png) no-repeat;
+                  background-position: left top;
+                }  
+                .signature {
+                    margin-top: 30px;
+                    margin-bottom: 100px;
+                } 
+            }
+        }
+        .carousel-control-next {
+          right: -30px;
+        }
+        .carousel-control-prev {
+          left: -30px;
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+          width: 40px;
+          height: 40px;
+        }
+    }     
+}
+
+#final-page {
+    .row {
+        .col-sm-5 {
+          padding-right: 40px;
+            p {
+              margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+#footer {
+	background: #191919;
+    .row {
+        p {
+            &.second-p {
+              padding-bottom: 70px; 
+              background: url(../../img/cards.png) no-repeat;
+              background-position: center bottom;
+            }
+            &.third-p {
+              padding-bottom: 70px;
+              background: url(../../img/icons.png) no-repeat;
+              background-position: center bottom;
+            }
+        }
+    }
+}
+
+
+// Button's styles
+
+.btn {
+  border: none;
+  border-radius: 0;
+  width: 228px;
+  height: 57px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.submit-btn {
+  width: 200px;
+  height: 36px;
+  font-size: 16px;
+  background-color: #c89f2d;
+  text-transform: none;
+  padding-top: 5px;
+    &:hover, &:focus {
+      background: #b48f28;
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+}
+
+.see-menu, .book-table {
+  background: url(../../img/bg-button-2.png) no-repeat;
+  //margin-left: 40px;
+    &:hover, &:focus {
+      background: rgba(0, 0, 0, 0.6);
+      border-color: transparent;
+      box-shadow: none;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+      background: rgba(0, 0, 0, 0.6);
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+
+// Back to top button styles
+#myBtn {
+    display: none; 
+    position: fixed; 
+    top: 20px; 
+    left: 30px; 
+    border: none; 
+    background-color: #cc9900; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: #555; 
+}
+
+// Animation
+.navbar-brand {
+    width: 100px;
+    height: 100px;
+    animation-name: myAnimation; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s;   
+}
+
+@keyframes myAnimation {
+    0%   {color:white; left:0px; top:0px;}
+    25%  {color:gray; left:200px; top:0px;}
+    50%  {color:black; left:200px; top:200px;}
+    75%  {color:gray; left:0px; top:200px;}
+    100% {color:white; left:0px; top:0px;}
+}
+
+
+
+// Adaptive
+
+@media (max-width: 769px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  #reviews .carousel .carousel-item .black-square p {
+    font-size: 15px;
+  }
+
+  #home .navbar .navbar-container {
+    .navbar-toggler {
+      float: right;
+      display: block;
+    }
+    .navbar-collapse 
+      position: absolute;
+      left: -15px;
+      top: -10px;
+      max-width: 150px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 0 0 10px 20px;
+      z-index: 1;
+        ul.navbar-nav li.nav-icon {
+          float: left;
+          width: 30px;
+        }
+}
