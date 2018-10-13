@@ -106,11 +106,9 @@ img {
   padding-bottom: 140px;
 }
 
-// Pages styles
+// Pages' styles
 
-
-
-#home {
+.home-page {
 	background: url(../../img/background.png);
 	background-position: center top;
     .navbar {
@@ -151,7 +149,7 @@ img {
     }
 }
 
-#ingredients {
+.ingredients-page {
   background: url(../../img/bg2.png);
   background-position: center top;
         .circle-pics {
@@ -159,7 +157,7 @@ img {
         }
 }
 
-#menu {
+.menu-page {
     .menu-item {
       padding-bottom: 40px;
         .price {
@@ -170,7 +168,7 @@ img {
     }
 }
 
-#reviews {
+.reviews-page {
   background: url(../../img/bg3.png);
   background-position: center top;  
     .carousel {
@@ -206,7 +204,7 @@ img {
     }     
 }
 
-#final-page {
+.final-page {
     .row {
         .col-sm-5 {
           padding-right: 40px;
@@ -217,7 +215,7 @@ img {
     }
 }
 
-#footer {
+footer {
 	background: #191919;
     .row {
         p {
@@ -282,6 +280,7 @@ img {
 
 
 // Back to top button styles
+
 #myBtn {
     display: none; 
     position: fixed; 
@@ -327,11 +326,11 @@ img {
     font-size: 40px;
   }
 
-  #reviews .carousel .carousel-item .black-square p {
+  .reviews-page .carousel .carousel-item .black-square p {
     font-size: 15px;
   }
 
-  #home .navbar .navbar-container {
+  .home-page .navbar .navbar-container {
     .navbar-toggler {
       float: right;
       display: block;
